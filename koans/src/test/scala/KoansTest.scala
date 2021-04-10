@@ -20,7 +20,7 @@ class KoansTest extends AnyFunSuite {
   test("returns the first n numbers in the Fibonacci sequence") {
     assert(fibonacci(3) equals List(1, 1, 2))
     assert(fibonacci(6) equals List(1, 1, 2, 3, 5, 8))
-    assert(fibonacci(6) equals List(1, 1, 2, 3, 5, 8, 13, 21))
+    assert(fibonacci(8) equals List(1, 1, 2, 3, 5, 8, 13, 21))
   }
 
   test("returns only the odd numbers in a sequence") {
