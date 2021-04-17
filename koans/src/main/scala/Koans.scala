@@ -1,10 +1,26 @@
+import scala.Seq
+
 object Koans {
 
-  def reverse(s: String): String = ???
+  def reverse(s: String): String = {
+    s.reverse;
+  }
 
-  def isPalindrome(s: String): Boolean = ???
+  def isPalindrome(s: String): Boolean = {
+    val regexedInput: String =
+      s.replaceAll("\\s", "").replaceAll("'", "").toLowerCase
 
-  def nth(listOfString: Seq[String], index: Int): String = ???
+    if(regexedInput == regexedInput.reverse){
+      true
+    }
+    else{
+      false
+    }
+  }
+
+  def nth(listOfString: Seq[String], index: Int): String = {
+    listOfString(index)
+  }
 
   def fibonacci(number: Int): List[Int] = ???
 
