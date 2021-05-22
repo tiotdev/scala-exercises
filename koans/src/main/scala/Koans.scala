@@ -2,9 +2,7 @@ import scala.Seq
 
 object Koans {
 
-  def reverse(s: String): String = {
-    s.reverse;
-  }
+  def reverse(s: String): String = s.reverse;
 
   def isPalindrome(s: String): Boolean = {
     val regexedInput: String =
@@ -18,14 +16,17 @@ object Koans {
     }
   }
 
-  def nth(listOfString: Seq[String], index: Int): String = {
-    listOfString(index)
-  }
+  def nth(listOfString: Seq[String], index: Int): String = listOfString(index)
 
   def fibonacci(number: Int): List[Int] = ???
+//  {
+//    val fibRange = 1 to number
+//    println(fibRange)
+////    val out = fibRange.map(n )
+//  }
 
-  def onlyOdd(listOfInt: Seq[Int]): Seq[Int] = ???
+  def onlyOdd(listOfInt: Seq[Int]): Seq[Int] = listOfInt.filter(x => (x % 2) != 0)
 
-  def zipMap(listOfKeys: Seq[String], listOfValues: Seq[String]): Map[String, String] = ???
+  def zipMap(listOfKeys: Seq[String], listOfValues: Seq[String]): Map[String, String] = Map() ++ (listOfKeys zip listOfValues)
 
 }
